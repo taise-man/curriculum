@@ -67,11 +67,17 @@ public class Main {
 
 //      <以下記述>
 
-			Object[] arrayDate = { 2022, 01, 29 };
-
+			List<Object> arrayDate = new ArrayList<>();
+			
+			arrayDate.add(cal.get(Calendar.YEAR));
+			arrayDate.add(cal.get(Calendar.MONTH) + 1);
+			arrayDate.add(cal.get(Calendar.DATE));
+			
 //      問⑧ 配列arrayDateをList型に変更しましょう。
 //	    <以下記述>
 			List<Object> list = Arrays.asList(arrayDate);
+			
+			
 
 //      問⑨ 上記で格納した要素を繰り返しで出力しましょう。
 //	    <以下記述>
